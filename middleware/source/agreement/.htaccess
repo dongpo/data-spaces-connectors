@@ -1,0 +1,13 @@
+# ============================================================
+# agreement/.htaccess - Agreement 路由
+# ============================================================
+
+Options -Indexes
+
+RewriteEngine On
+
+# 將 /agreement/100000 轉為 index.php
+RewriteRule ^([0-9]+)$ index.php [L,QSA]
+
+# 直接訪問 index.php 則正常執行
+RewriteRule ^index\.php$ - [L]

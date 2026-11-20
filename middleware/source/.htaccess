@@ -1,0 +1,31 @@
+Options -Indexes
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+RewriteEngine On
+
+# 讓所有 .html 都指向對應的 .php，並保留查詢字串
+RewriteRule ^([^/]+)\.html$ $1.php [QSA,L]
+
+<IfModule mod_headers.c>
+    # 1. 啟用 HSTS (強制 HTTPS) 
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+    # 2. 加入 Permissions-Policy 
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # 3. 針對「純文字、XML、圖片等靜態資源」給予最乾淨的 CSP
+    <FilesMatch "\.(txt|xml|jpg|jpeg|png|gif|ico)$">
+        Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self';"
+        Header always set X-Content-Type-Options "nosniff"
+    </FilesMatch>
+
+    # 4. 針對「CSS / JS 靜態檔案」給予對應的資源宣告
+    <FilesMatch "\.(css|js)$">
+        Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self';"
+        Header always set X-Content-Type-Options "nosniff"
+    </FilesMatch>
+</IfModule>

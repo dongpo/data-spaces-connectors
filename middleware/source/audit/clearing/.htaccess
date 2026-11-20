@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# 1. 保留 Authorization Header（處理 Bearer Token）
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%1]
+
+# 2. 將 /audit/clearing 請求導向至 log.php
+RewriteRule ^$ log.php [L,QSA]

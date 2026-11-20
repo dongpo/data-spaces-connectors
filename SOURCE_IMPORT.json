@@ -1,0 +1,854 @@
+{
+  "archive": "tms-edc-current-demo-source.tar.gz",
+  "archive_sha256": "b51ece484bdfd3a148029d86e067519d5c7f3df50aee5491b94084e193575afd",
+  "received_date": "2026-11-20",
+  "source_directory": "/opt/tms-edc",
+  "source_files": [
+    {
+      "path": "README.md",
+      "export_sha256": "a85e8ca79a61ec2629336fc42665cdf95cfd0cd5d2d2b533c5d6b1868bd02bfd",
+      "published_sha256": "1926dcc39cb3566f57d4e547876d9595d4ff5f1ba11f2eee19b4510d6abdc76a"
+    },
+    {
+      "path": "config/consumer.properties",
+      "export_sha256": "224eac968f1af36a0a52f8d78eafead20e07b806a42395b5f58a1c269b4a787e",
+      "published_sha256": "7b1d7e0c722ac1a05a04d1588ad9a76b9f4b9029c41c796fa3d7a8d814495352"
+    },
+    {
+      "path": "config/dataplane.properties",
+      "export_sha256": "61badc00ad0b08b61295f60b8ee56e10f93651a8f28990a887f6419df5a436a7",
+      "published_sha256": "61badc00ad0b08b61295f60b8ee56e10f93651a8f28990a887f6419df5a436a7"
+    },
+    {
+      "path": "config/provider.properties",
+      "export_sha256": "03c48be8c7f155eb5ae3e0cbf9cc273c91fd5693de4e7256da0c040f1dc0c774",
+      "published_sha256": "973bf1dbcc3d17fe87b35a81d9669833745efb8450effbd494418fe03acf40cb"
+    },
+    {
+      "path": "demo/workbench.html",
+      "export_sha256": "0fcad42e4d7bf12442fa0841520da5d0c212eb7fce133d35e705f86b60bbc914",
+      "published_sha256": "0fcad42e4d7bf12442fa0841520da5d0c212eb7fce133d35e705f86b60bbc914"
+    },
+    {
+      "path": "demo/workbench.py",
+      "export_sha256": "19005b0a741fda0fe9e8b3629817a2ed97168605c75881161a92dcc871f9ebc2",
+      "published_sha256": "19005b0a741fda0fe9e8b3629817a2ed97168605c75881161a92dcc871f9ebc2"
+    },
+    {
+      "path": "deploy/install-vm.sh",
+      "export_sha256": "b406382f2ad1aaf2411140409dd48156660bfb7e06889e2afde61f759d5c9339",
+      "published_sha256": "b406382f2ad1aaf2411140409dd48156660bfb7e06889e2afde61f759d5c9339"
+    },
+    {
+      "path": "deploy/install-workbench.sh",
+      "export_sha256": "0c30f34bb21d47a9b6b192316146bc5bbdb96a52537a9516799bf88f4c1f9117",
+      "published_sha256": "0c30f34bb21d47a9b6b192316146bc5bbdb96a52537a9516799bf88f4c1f9117"
+    },
+    {
+      "path": "deploy/tms-demo-status.service",
+      "export_sha256": "a511f71fc7da8e012a74af6be6fdd1f554f7008356ef0eda4cd7b1dcbecce86e",
+      "published_sha256": "a511f71fc7da8e012a74af6be6fdd1f554f7008356ef0eda4cd7b1dcbecce86e"
+    },
+    {
+      "path": "deploy/tms-role-workbench.service",
+      "export_sha256": "17462a42f2ce53c7b1147b286d21d140b622bacf509fcd59bb7d55e5ef403936",
+      "published_sha256": "17462a42f2ce53c7b1147b286d21d140b622bacf509fcd59bb7d55e5ef403936"
+    },
+    {
+      "path": "deploy/verify-vm.sh",
+      "export_sha256": "a9ceb2e624d1ea53cd4c07010170aa84719f38c60ec3ecd891eba18fefdb0bb8",
+      "published_sha256": "a9ceb2e624d1ea53cd4c07010170aa84719f38c60ec3ecd891eba18fefdb0bb8"
+    },
+    {
+      "path": "middleware/.dockerignore",
+      "export_sha256": "1708fa1142d246755f235faf70deba48627244d2801addd91acda96a13c399fc",
+      "published_sha256": "1708fa1142d246755f235faf70deba48627244d2801addd91acda96a13c399fc"
+    },
+    {
+      "path": "middleware/Dockerfile",
+      "export_sha256": "2648c872e9209478fee102426836012857654a2e3212a5a2f2e4658819275fa6",
+      "published_sha256": "2648c872e9209478fee102426836012857654a2e3212a5a2f2e4658819275fa6"
+    },
+    {
+      "path": "middleware/edc-schema.sql",
+      "export_sha256": "f2857b708d17cb8470d1f425e4bcf2b8e1bc22efb1743f926b982258a4fa7e5a",
+      "published_sha256": "f2857b708d17cb8470d1f425e4bcf2b8e1bc22efb1743f926b982258a4fa7e5a"
+    },
+    {
+      "path": "middleware/patch-manifest.json",
+      "export_sha256": "a27c8418173f647ad5b185fdd7d8e7dccc1e93eea6c1c414b6efea90cb454789",
+      "published_sha256": "a27c8418173f647ad5b185fdd7d8e7dccc1e93eea6c1c414b6efea90cb454789"
+    },
+    {
+      "path": "middleware/schema-only.sql",
+      "export_sha256": "10507d63466bdc737750c23cbbd01d6764d49c4690d88b4b7b79ae3c61c2e274",
+      "published_sha256": "10507d63466bdc737750c23cbbd01d6764d49c4690d88b4b7b79ae3c61c2e274"
+    },
+    {
+      "path": "middleware/seed-test.php",
+      "export_sha256": "40729d848498e94d48831d1597682d0afb18b43bc1bd8ad48f0c9b1e8245a80f",
+      "published_sha256": "40729d848498e94d48831d1597682d0afb18b43bc1bd8ad48f0c9b1e8245a80f"
+    },
+    {
+      "path": "middleware/source/.htaccess",
+      "export_sha256": "3326f78d922e4448d57f4b4ca85aa13b1b8a6461aae24613c7ae69fd6bc36eac",
+      "published_sha256": "1f6fc24ebaa741f3dff2a3b8fd8ff5d5beb058391693bbca3db63a17c34b1965"
+    },
+    {
+      "path": "middleware/source/DataDeclaration.php",
+      "export_sha256": "db42825fc1263ce0b3eebba385af0da38648f644e58d8c1e132ef5c3a958b177",
+      "published_sha256": "a6044330107bd6987918f56a124555c6fcbe5519a6836f92fcab28b752b753fc"
+    },
+    {
+      "path": "middleware/source/InfoPrivacyPolicy.php",
+      "export_sha256": "96075fc12453d4d080601d90e9d8489be8acb75fdaefa32d41d374467db8bf96",
+      "published_sha256": "07770abd9b441c146d7d453164d0b3842645c3b4fa7230291b721ddcba04fba4"
+    },
+    {
+      "path": "middleware/source/PrivacyPolicy.php",
+      "export_sha256": "250e1d2a23c940523d371a2480749cab55c7bf70fd46e4b24dbf0778bf025cce",
+      "published_sha256": "1c107dcc9dfa425e507b293786509076436af6f56f175b53ebd092df846b1315"
+    },
+    {
+      "path": "middleware/source/Share.php",
+      "export_sha256": "03d7109b647375baf47021f804361e5ac1e81d91d9c31581d1e00589857b6548",
+      "published_sha256": "7504585d3cb7a1c43d2e353d9bec2ed3ffa6895dfda0787aeb01c361c65dca28"
+    },
+    {
+      "path": "middleware/source/about.php",
+      "export_sha256": "7acf1e56cae3939ab0970bc79adfe3dbded1d37a6710e25bf72b0fc94f254469",
+      "published_sha256": "42dd0657b4415a94bfd4332f4d06758c583f4b191f02b83cfc13cf7147a9d74b"
+    },
+    {
+      "path": "middleware/source/activate.php",
+      "export_sha256": "fa6155276f695a136433822f2add4b16e3bea4b460446ecaaca4f0f2a8bd241c",
+      "published_sha256": "3722592613fe6620bdbb4232f66d1c42f72fac5f175f6b943ef1dd521ed10cf3"
+    },
+    {
+      "path": "middleware/source/adm/DataDeclaration.php",
+      "export_sha256": "a47ef1e1761a2eccc88937944c0e0d1956219f7019e7fc9fd30d3be1b554afb8",
+      "published_sha256": "9cf0fab899b82fa78f03b5c57a200c96ac392ae35978d8f77d7319b53d258f16"
+    },
+    {
+      "path": "middleware/source/adm/InfoPrivacyPolicy.php",
+      "export_sha256": "c9f82b4a66b1828c0e6b1f679e917d0853389b883cb4820358a3c340670befc2",
+      "published_sha256": "1e5003bc482455ab84db781f9022b4d8ef01f4b7c244d6a003d58689b860e876"
+    },
+    {
+      "path": "middleware/source/adm/PrivacyPolicy.php",
+      "export_sha256": "7dfa0728faeea07474ed654ce265f9defa4881a3ae47d2bd9db4c061c9045a70",
+      "published_sha256": "f35ef24f868d3f716ebfb645ec20d51bd30437b030e7d17335bc8fbd77710b6d"
+    },
+    {
+      "path": "middleware/source/adm/_pageajax.php",
+      "export_sha256": "cbfdf5f2c095255e4f5bb4b6d018898b6a3feac66ff5abe411ce509a809ad157",
+      "published_sha256": "0c58d8eda27c683ff08fe084d394f2e0844ac94db500ccce61cc0827b0693e6a"
+    },
+    {
+      "path": "middleware/source/adm/about.php",
+      "export_sha256": "d7f8ca2d38209663be469c63006682eb539d414f6aed064a84f7b25c2ed6ee75",
+      "published_sha256": "2885f01c4817fa6200d39d33bf607b48fe5751b1de010fac9606b97b7352aad7"
+    },
+    {
+      "path": "middleware/source/adm/allowed.php",
+      "export_sha256": "77d5e79d3f0f81addf8b15a113e9acb7725b324b3d8bbcc0401e9e27dad5ca29",
+      "published_sha256": "079c6d0719d911af86f763d9e568d6cdde1e2b98552482a17347d0da0db59c35"
+    },
+    {
+      "path": "middleware/source/adm/bloglist.php",
+      "export_sha256": "e257794ac1df6b28493140dfff4789afd0eeeb09ba15c2b4eb9b4c0924d761fd",
+      "published_sha256": "1ed062231f67934c6e53862d1f91e536dcea4403d802bdd042593bf3f5600e11"
+    },
+    {
+      "path": "middleware/source/adm/capnew.php",
+      "export_sha256": "5d0bd0c1a294088efe54361c7cc7341add6114a5e80ce22c21b24902ddcf35d7",
+      "published_sha256": "6a8188c4e9772759cef9feecd522183157c6c7ae7528b6447f938efa760ae5fd"
+    },
+    {
+      "path": "middleware/source/adm/code97.php",
+      "export_sha256": "e1226d72dfa3dbb64b30442ae4dc0a05e1b8ed8bd562fdef7ff2aa2c6a33991e",
+      "published_sha256": "c86530fddfe17b38a5d1db962353ff92ba32eaa55caa1c6d2cf43407584a3113"
+    },
+    {
+      "path": "middleware/source/adm/code98.php",
+      "export_sha256": "faa5aa17025ef26682eaf9053e3ed5d5c58d535f7af134bae93390bebca6b251",
+      "published_sha256": "8abf8a5d7c8255477b44c1d66bdc9cce9f1671ceec09d30146fec29a43b42750"
+    },
+    {
+      "path": "middleware/source/adm/code99.php",
+      "export_sha256": "71d844b71068b47f64a66661cfce6ee44686556a127b2cbd8abff9e372028013",
+      "published_sha256": "af0159b86639395f4261ef01b1556b6853d668c7e89b41b78fdd8ae2231164ab"
+    },
+    {
+      "path": "middleware/source/adm/config/JwtValidator.php",
+      "export_sha256": "cfbc42a8c872cb77b333c3a65bf8b5b78ef104daf6113e3c1822c2c5a2f1be03",
+      "published_sha256": "3aa965dfdd41abeee05585a60956adc114e032fd9a263ac2f7d6aaa46755b575"
+    },
+    {
+      "path": "middleware/source/adm/config/Response.php",
+      "export_sha256": "6378390ab0aedbcffedd826a4ef7ffef71ef715e8c6c31851d39356198f8e8ea",
+      "published_sha256": "8f196d4cb2aba7ba2f3c2570146097318dcedbb0fe038ef223c4e98cc61fe2e0"
+    },
+    {
+      "path": "middleware/source/adm/config/SMS.php",
+      "export_sha256": "7074c5f431731dab3e89de5fa459c68b8c119c65958f0e38bd75dddc733c1407",
+      "published_sha256": "bc66eff4c1c5b7721efdb4a5bb10d3c2a4cdd23fcb4fbd4d2945f4e79946c998"
+    },
+    {
+      "path": "middleware/source/adm/config/TokenAuth.php",
+      "export_sha256": "0e87a6ce48fa0cb76c783faf77bacd7c799c36dbd61a788239a05338ace9f222",
+      "published_sha256": "4788ffcddfdead4c344de062e6481dd0d43a536edb2260384024ca5ca5e6d14b"
+    },
+    {
+      "path": "middleware/source/adm/config/checkip.php",
+      "export_sha256": "93c9c11ed3cbaa1df9f0d43933d92c8c6fcda24947ac08c492525511fb097783",
+      "published_sha256": "f8bde6e453c29711be88ecea19222544f92040930a7fe62669048a41e8a80504"
+    },
+    {
+      "path": "middleware/source/adm/config/config.php",
+      "export_sha256": "cd485cbf3d2b2701b36156a39d3f92969fa4e770349f0f01ad0ef2a736c97840",
+      "published_sha256": "6a5b1c6d6800f6843a752fa6b9a0f86c3a107762fe9de657c4de88427266e129"
+    },
+    {
+      "path": "middleware/source/adm/config/createimg.php",
+      "export_sha256": "ab55f667c9cb3c809d643f165d4e756f61b5950b7824638b957bb37ad9d31c08",
+      "published_sha256": "acdd30c240d861add921f81cf41e4a87c4d6c4cd90312ea52d31eea79b151bbb"
+    },
+    {
+      "path": "middleware/source/adm/config/csp_relaxed.php",
+      "export_sha256": "98b7ddef73db725730f5daa4c6c6b5702c91655e299d0c626698530ddf637fa3",
+      "published_sha256": "8c9da57d19acecb14c82762d63409d963b307d8e5e2bac9088e3b4deadd835b2"
+    },
+    {
+      "path": "middleware/source/adm/config/csp_strict.php",
+      "export_sha256": "7c653a7b0ef10d40fd7801ee9807d20511986a475cc7624655808f80469f7220",
+      "published_sha256": "17c845e637c9fb3bc57f3357f5b3474b6962ce557ddcd50fe5cca063b831d717"
+    },
+    {
+      "path": "middleware/source/adm/config/did.php",
+      "export_sha256": "5f9335591940b88a0c1da9efd3541781c13898df741d3f5518461d56779e6433",
+      "published_sha256": "fd234100f7b792baf9747a4682c3d301d39a4fe818a26e4ab60a0717fba21bdf"
+    },
+    {
+      "path": "middleware/source/adm/config/getform.php",
+      "export_sha256": "bb6d8a5f9cdc66d1f222d1eb4275a6e76e45c9d424c572fc9dc4a482ab168dc9",
+      "published_sha256": "daa8e70364bdbbad6e57c0d0838dca86209f54f5a898c8b02bc521e91b84fff8"
+    },
+    {
+      "path": "middleware/source/adm/config/getformf.php",
+      "export_sha256": "85fa8ae22e34616661110bee0b37140daab075badaca24a773fa97b419ca6d95",
+      "published_sha256": "77d910cf89494e9a32abb6a6364b7938a0006d0b745e2661952c691cf072ffe6"
+    },
+    {
+      "path": "middleware/source/adm/config/getformfp.php",
+      "export_sha256": "f677365b827ba41b3cac5e41dd44c4d0ebd5824ef520d0a9edd00d7ddb12965b",
+      "published_sha256": "d48a61d3ae1299d80a249c77950ee27e2ab44e8267eb89c17f54916ea4c4f3c3"
+    },
+    {
+      "path": "middleware/source/adm/config/getformin.php",
+      "export_sha256": "c77a08b7d4ba225307fe8ad202423cdd247cda267e098b246627f4e783563045",
+      "published_sha256": "5a065a68e08026a004ccaaa67f74bc54cd480ce455214a24d1d2117f106c2725"
+    },
+    {
+      "path": "middleware/source/adm/config/menu.php",
+      "export_sha256": "6f4c49d6a6b13bfa4d2dd75bb24bdd119ee1a531607d54765e6ade24ab1f8bc3",
+      "published_sha256": "d8cc04d5262c1cb114c707e3a4d8126efba809aa8812762f515e350e285df072"
+    },
+    {
+      "path": "middleware/source/adm/config/menu1.php",
+      "export_sha256": "c188686e69acbb64b6e84455d11e30d30fdfdc2a1c54d9b29e73e6ae817da2a0",
+      "published_sha256": "5ac0db36be47ac783d70d2f890d27b1f984fce70ba6981d9edbcbd0c5c71056d"
+    },
+    {
+      "path": "middleware/source/adm/config/menuuser.php",
+      "export_sha256": "450527820c7fd41ec47a0c03dd977e3738ad280fd92eefb63395b6b7d22f94fe",
+      "published_sha256": "4223d3e722e19bb845c6d74ab9b21c486a26169af9166bdf71500de90d9ac6d3"
+    },
+    {
+      "path": "middleware/source/adm/config/product.php",
+      "export_sha256": "2a0782f731f9b05499495ab45cb5019912bb466f5ecd72299f499c270aa4b350",
+      "published_sha256": "837586deb4e8c9f6cd84a4633ef1880c6155780a721f9e2cfa797f167224c7b6"
+    },
+    {
+      "path": "middleware/source/adm/config/share.php",
+      "export_sha256": "891b717ef5818171b84bcae0b0fd0daf6ce50c649abf841cd31438d4545e1df2",
+      "published_sha256": "358d6333330b976a7b1c3c952dcd8fcb1d7ef42624a7a7fb0a2b91653ab87762"
+    },
+    {
+      "path": "middleware/source/adm/constraints.php",
+      "export_sha256": "8593ae0b79c6ccd1beb48ffa0dbc59b55e65704c5eae7a4828e01f075a540be2",
+      "published_sha256": "79f7fbc0755595519aa3bc0d639c4572ba5e9b370b9357e5b9ab5d22875a819f"
+    },
+    {
+      "path": "middleware/source/adm/contact.php",
+      "export_sha256": "a3dc0ffc3c9db9931247e1e63be4361470cc4e8bc99fd9289078bd9dedb80e5c",
+      "published_sha256": "a4ddcb1c2e18c7e89e8db14bf63674c239605907cf891aa1d917439afc8d78ac"
+    },
+    {
+      "path": "middleware/source/adm/entities.php",
+      "export_sha256": "a476db3589a889b32ad0314880a1faf3ea8dfcc85fb8b615cd4432eda773723d",
+      "published_sha256": "707f182ae0203c77983024f82f82d13f609dc634f7bd3b0a747b5d2efdd0e691"
+    },
+    {
+      "path": "middleware/source/adm/index.php",
+      "export_sha256": "58bb43a19709d8ac4cb5e24cfcaa0c00e3d06532b4949cb53181016370d14891",
+      "published_sha256": "58bb43a19709d8ac4cb5e24cfcaa0c00e3d06532b4949cb53181016370d14891"
+    },
+    {
+      "path": "middleware/source/adm/indexseo.php",
+      "export_sha256": "6226efa60a0b2a1f9b831b7ba140c62534fc8bdc60c18ce25ecba9c766601a8c",
+      "published_sha256": "727984e333e0ef1830606a9100f137c873fba8028f22d92f3b43abd231ad9109"
+    },
+    {
+      "path": "middleware/source/adm/industry.php",
+      "export_sha256": "9967244a930613e300650988e205f2a98748c9d13a9c4388fad373597952f4e7",
+      "published_sha256": "3669b516a4afe001235bc9de470b4b2eb85032e4f4d55d9be7dacf1252b16aa8"
+    },
+    {
+      "path": "middleware/source/adm/js/tinymce/getfile.php",
+      "export_sha256": "5d1bf21d957b85a8d4cf585c8f3de9d0cbab1be6ba108fcd03c9e890d38b463d",
+      "published_sha256": "a4836bd489788aa5b5f930f096c3f685bd27316e96381869e671af1aed646d8c"
+    },
+    {
+      "path": "middleware/source/adm/js/tinymce/upload.php",
+      "export_sha256": "24b8e6941fe1b9fa86a73c2acd81a9b803c9ccd94beb8244958b4e16113edd8b",
+      "published_sha256": "8ad74f54d5a3357616aafcdea451634ef9cbcd0cb2d6909eaf890e8ccaf948df"
+    },
+    {
+      "path": "middleware/source/adm/newslist.php",
+      "export_sha256": "28dcbb81e521b6fe5ac3bf65e3ab4e5c801f44dec03d753d3cf0da8cf42ef274",
+      "published_sha256": "597eb3ed7d2f19d75d540cd86c8de51cdee4f15bac7290d081efdaaa76ee33d5"
+    },
+    {
+      "path": "middleware/source/adm/newsseo.php",
+      "export_sha256": "92e1cc9b9655810f85c3370a9b04c2196e68e7e8a70b58335fc1f1cd263499ef",
+      "published_sha256": "17482ef04873f7194b30fefa343ae388de005e92decceb3e8248a09c62abf47f"
+    },
+    {
+      "path": "middleware/source/adm/policy.php",
+      "export_sha256": "9fabcfc386e8c1fbccbb2f7f0679fc1e25ec1e7b465ccea9d5de4709c24a6341",
+      "published_sha256": "a3e2a74f2051060254ca93dea49dc501b1ea5f847c66612fb438cc63eb00e272"
+    },
+    {
+      "path": "middleware/source/adm/prohibited.php",
+      "export_sha256": "c95cfca2dad6fa8355f774e04065cb6773c3de5c204f8cf501c403cec5de3502",
+      "published_sha256": "209f95b757159f0272d165a57e7471dcc5e730740ee29961286e775f5dab634b"
+    },
+    {
+      "path": "middleware/source/adm/reject_reasons.php",
+      "export_sha256": "c607e692c23324925b44232252b94edb099baa7e4bc87062090081bb7fe05e3d",
+      "published_sha256": "8cb737450433acb10b5780f813f5a2ae4e39a9c2a9af0653215be20310b17250"
+    },
+    {
+      "path": "middleware/source/adm/schema.php",
+      "export_sha256": "b74ae295839928a2fd97c3a4a995af79d3aff884362c5c671489cbdb33301cbc",
+      "published_sha256": "686d8e67614c8ec2a50d20f0f36d2e129d4447b1ef15eb0f815ee9d7699ed379"
+    },
+    {
+      "path": "middleware/source/adm/select0.php",
+      "export_sha256": "74b810a6b627cbfeaeb51fac89d42157c4d5df9d6afca68ba544cb6dda4719f2",
+      "published_sha256": "f662896bedfec80cef182ab1b7b48205394b493f7efa160c395783d9dd9315e5"
+    },
+    {
+      "path": "middleware/source/agreement/.htaccess",
+      "export_sha256": "9274f60e36622078d029a626b6af5fb1cab7baebdaabb7251bd2c8d32a35e937",
+      "published_sha256": "788650cdb16e00997e0a6995abef747f8b9097c46593564fa7b240d10db60e95"
+    },
+    {
+      "path": "middleware/source/agreement/index.php",
+      "export_sha256": "c199cf12d1403705f806415d33c5260d0017549b446c5fbe822ec1569842f00c",
+      "published_sha256": "917d031380a56ebc192bb8c998dc0061a8130b588706fab66ec67207e1e69b63"
+    },
+    {
+      "path": "middleware/source/ajax.php",
+      "export_sha256": "1be2246ce1d4071e48c0effe5c0576147e0518cc719523adea2bc8f54c2b7cfe",
+      "published_sha256": "3877922383734019a1f7978b2a5ce9d046aa818383053bc3145b452210baefa1"
+    },
+    {
+      "path": "middleware/source/audit/agreement/.htaccess",
+      "export_sha256": "e2db4c478dd548bc36ed770ca334d4a021204ae14c08f675b8502e6000a26dfe",
+      "published_sha256": "ec00c60845045011f13494bab74ba4b6909db207b5355411ad18209d606250b7"
+    },
+    {
+      "path": "middleware/source/audit/agreement/index.php",
+      "export_sha256": "b06c3133a603f1d59a7382042c9c33b0f6854c582c603b695455e18803987107",
+      "published_sha256": "31f971d4283daf72cec41fb0f949f9c9a2609a19698310c390d088f129ea9775"
+    },
+    {
+      "path": "middleware/source/audit/clearing/.htaccess",
+      "export_sha256": "fdfd487862c14c8b3bb4d8180944b95939e5323af0a518b259981eadf1ebc46c",
+      "published_sha256": "b1c677acbba5e550734a75b236b18c67fe25e20c0dcdaf6128d31143265e5be8"
+    },
+    {
+      "path": "middleware/source/audit/clearing/log.php",
+      "export_sha256": "8e7f83d952c9fa33423a248c3b3b3628ce71085cba18695a30b6b1da44424185",
+      "published_sha256": "8e7f83d952c9fa33423a248c3b3b3628ce71085cba18695a30b6b1da44424185"
+    },
+    {
+      "path": "middleware/source/audit/dataset/.htaccess",
+      "export_sha256": "d1ad1a667ecee5a5d02c30a3f5ba34404f785ae509081660395af9f9508ae6d1",
+      "published_sha256": "eb156dc2b1fcb43630697c74d993e6a280f44f1ab20d0f46a2ea076dc9b43641"
+    },
+    {
+      "path": "middleware/source/audit/dataset/index.php",
+      "export_sha256": "5143fa601d8aa0af2cb949d3f9cadfa25036314fbc122a2720d5193b56b675ac",
+      "published_sha256": "313602d0d2cf17a6e122696e5c0887457e257e475ce63bd46ccecf4a3837cde8"
+    },
+    {
+      "path": "middleware/source/audit/transaction/.htaccess",
+      "export_sha256": "521f5e4bde0fa694e731133b987adb8281210c13ff419fddf9658f371e17204f",
+      "published_sha256": "c346545f335af91cbeff3b98ed5223f631ce49f6c540c7bc3da42ff787a8ffcb"
+    },
+    {
+      "path": "middleware/source/audit/transaction/index.php",
+      "export_sha256": "6563b8ef8730151d0196519280b0d8c45c2aa2f2428e0c3a8bd8c054f4180f36",
+      "published_sha256": "6563b8ef8730151d0196519280b0d8c45c2aa2f2428e0c3a8bd8c054f4180f36"
+    },
+    {
+      "path": "middleware/source/auth/.htaccess",
+      "export_sha256": "882f18d9a06c5cb6a0f108a7ad09c0ac5e73acbb88f65a56e2bc07772e832f53",
+      "published_sha256": "3f6309790e2f44c2b86a88538fa4bf9b2e9e9cbf60a72a99a781edab14162a5e"
+    },
+    {
+      "path": "middleware/source/auth/contract_token.php",
+      "export_sha256": "dbba3d405f7911728bbf1222c05f3df3aa82cbc19d5296911156bb45d5f12f9d",
+      "published_sha256": "886a070534528f3b8ddac227df7460694ce347006405e1ad8526b01af6b40575"
+    },
+    {
+      "path": "middleware/source/auth/token.php",
+      "export_sha256": "9b7515188613bd315bc4569b654a4c3763a273aa87768813a179686d97128a10",
+      "published_sha256": "f1a315b335d956d443fcd657cb932fe15a16b7f6113ebab71cc7e85d9f39e41e"
+    },
+    {
+      "path": "middleware/source/auth/verify.php",
+      "export_sha256": "127d39be41995977cbe0e989c2f325daff1c4dda94b00ebe0914f2b4f4b8f678",
+      "published_sha256": "127d39be41995977cbe0e989c2f325daff1c4dda94b00ebe0914f2b4f4b8f678"
+    },
+    {
+      "path": "middleware/source/catalog/.htaccess",
+      "export_sha256": "4fa06291ea3c0747d64a9e948050efe535d4c8662ccc00f22f09db293c4a12c8",
+      "published_sha256": "364e5184c2ab502a4c92308571fd56a12f59d034529a032359e610adaf103426"
+    },
+    {
+      "path": "middleware/source/catalog/index.php",
+      "export_sha256": "0c8dfa4af524a324aa916d2fec18151f96b8eacd499acac09d5a15b6a4c9878d",
+      "published_sha256": "242f2e47b2fada8f2aa02723e77eb833eec3541e1c5faf12bf8d478c5149e1e1"
+    },
+    {
+      "path": "middleware/source/connector/.htaccess",
+      "export_sha256": "0b9fae70d63455e9514f34cb1c28fd2dd4d91909e6371d97ffb7f16110d7a9e5",
+      "published_sha256": "bac242d37e6c3fd9fdbabd072b28e50fd5fd0d7b2d082e011d39ccef48867bf5"
+    },
+    {
+      "path": "middleware/source/connector/index.php",
+      "export_sha256": "944fd32e6ff7728348c51b52505e103e55e80de4e35b58124a46e46680d412a2",
+      "published_sha256": "230407749fa40a5b90acdf2a3abdadb104aba408cff22eea20cf58c93cd44ff2"
+    },
+    {
+      "path": "middleware/source/contact.php",
+      "export_sha256": "2bb978b4aea7a8698781b45df3d993903ee4c4f7b5d368db9bfd998338987ac7",
+      "published_sha256": "9e011c378cad227638af05a1b975ad955cc493fd36106ee99df06636221b6256"
+    },
+    {
+      "path": "middleware/source/contract/.htaccess",
+      "export_sha256": "fdb75346a426c629c22c0e77601dacd74c215f015e989d6b63ed9df0c11f3c86",
+      "published_sha256": "7188978ef5ab860bbb3b867f7085a32b23047b6264553eea494fef12525f4802"
+    },
+    {
+      "path": "middleware/source/contract/all.php",
+      "export_sha256": "9b6a353352c30929b53ad4f77d33c1c3664a50e35ed3e75c7d2e26ab3d51ac33",
+      "published_sha256": "f5f6d943b2efa2fad1c3e32fc2509240ad259dfab5f8b8112e8ee301083f9f43"
+    },
+    {
+      "path": "middleware/source/contract/index.php",
+      "export_sha256": "fb2dcb14cabffab84ee7640d927875e14d976e8beb115b39de92b54e810f4e76",
+      "published_sha256": "045acf0dd2a244a21877b4ec2f0d6d402095e05102b629b9dbe691b64ccb37e1"
+    },
+    {
+      "path": "middleware/source/contracts.php",
+      "export_sha256": "5af65cb560470eac81a588eab72a826183517166af9d63ab2e2fc07af60b0300",
+      "published_sha256": "6d03e933fd74b2909274692e428e7011bf8c2b815ef9b1b1c5df07eab8794a7c"
+    },
+    {
+      "path": "middleware/source/css/.htaccess",
+      "export_sha256": "ead150dc4354acac48501afbab5a9524ce2e4c991635444bb9926bced44eb635",
+      "published_sha256": "ead150dc4354acac48501afbab5a9524ce2e4c991635444bb9926bced44eb635"
+    },
+    {
+      "path": "middleware/source/dataset/.htaccess",
+      "export_sha256": "df828bc4157e389dffea09b9c5e8c2ba12b320756a8e7962277ca47e4124c7ef",
+      "published_sha256": "7e52eff8ec7b4cfdaf2efef3865df60c87f518479277f67eb7f553a679872241"
+    },
+    {
+      "path": "middleware/source/dataset/index.php",
+      "export_sha256": "f9430d182f925d512357e788ecb73b0ffcc813c35be81cd49888ba4e3d1e9733",
+      "published_sha256": "3fd829f9ac034e72b38e123c74c5044e709f806c5c31f11c5429ce4274c8a0d7"
+    },
+    {
+      "path": "middleware/source/footer.php",
+      "export_sha256": "e3cdbfd2d420624d38052be7b1edb0562dc13644925bf584222b28782095d499",
+      "published_sha256": "1005a23dd1f090d2d6b7e1a5715d2320042c51ac35e486389a5fd6a2560317e0"
+    },
+    {
+      "path": "middleware/source/header.php",
+      "export_sha256": "049aee131be14fdbe5604a8597e92af3a774ce1dab4e0018d697d71d9667ffde",
+      "published_sha256": "37f408a6ac171b32dcf51fd91c0d022c5813f87e0700e1002db164221916c5f0"
+    },
+    {
+      "path": "middleware/source/headerlogin.php",
+      "export_sha256": "bec8ae0d5895d8aa5deb6d22226fce5b815361c337f9f9310950e94567640b27",
+      "published_sha256": "91efb99f68256755fe8f653490fcbef2944d51f5fb04d7bc56e3cec7ac15918b"
+    },
+    {
+      "path": "middleware/source/inblocks/inputblock.php",
+      "export_sha256": "c5a5000a1f4bbfd6af0994e27df81917d79f8dd9dbe8059446cfc5178260b5d7",
+      "published_sha256": "c5a5000a1f4bbfd6af0994e27df81917d79f8dd9dbe8059446cfc5178260b5d7"
+    },
+    {
+      "path": "middleware/source/index.php",
+      "export_sha256": "34901179abfa10bb9782188316ddd74f22f44a78a091f4a741460e7d6e95f66f",
+      "published_sha256": "4c9c43b421e036ef0882c59aa69db3832651fa9f4661edfbe8c2a749367be44c"
+    },
+    {
+      "path": "middleware/source/integration/index.php",
+      "export_sha256": "bc14120cc02f608e1e83ec350a06f829ed4b623fd64180fd56fa5b06adb6649a",
+      "published_sha256": "bc14120cc02f608e1e83ec350a06f829ed4b623fd64180fd56fa5b06adb6649a"
+    },
+    {
+      "path": "middleware/source/js.php",
+      "export_sha256": "30f47b775e11a0b3a26661cd4112bf59f1bb49c7b6b939c88efe658ef981a913",
+      "published_sha256": "4b0d2010e98eea0ff625d7074b535253b6972ce8a7fae0d204cdf4ac177a34ed"
+    },
+    {
+      "path": "middleware/source/login.php",
+      "export_sha256": "7222eb480723e617c5f461e60c207ca9921a5ae4fbf84d830f68b553c43555b0",
+      "published_sha256": "32de6949f2c8e83d6f7642cdeff537d347753fa48fe53473352afde431fd9606"
+    },
+    {
+      "path": "middleware/source/logout.php",
+      "export_sha256": "3662a970ec6a5996023cdc172ddcb55e6b0720d4758c7ddb97a7d023232ab4c3",
+      "published_sha256": "e352d0272dc83a7d147b306e511c323271fd2eff55f9bb569a5553b85678a308"
+    },
+    {
+      "path": "middleware/source/machine_accounts.php",
+      "export_sha256": "afd32a045d56f58570c9a0ac37f960136f59ac6dc574944c75ff361be232b336",
+      "published_sha256": "e7768be7011b8f68043ca31338d0c0fefe98eef5b9d83164bfe0b46e23ca8868"
+    },
+    {
+      "path": "middleware/source/member.php",
+      "export_sha256": "27bce63cbd2af910bd7349d1184bc341f46e2e0101c6d81f9ee3baa6737c33a8",
+      "published_sha256": "dabea307e8885acf50d07c83768c23c4835b5f17fd176f7a3d1afc7f6c619d03"
+    },
+    {
+      "path": "middleware/source/my_applications.php",
+      "export_sha256": "ced0e6e0c437421328773cc0134082d1b58e0ab1d17ca5f205ca3175d4aadcc0",
+      "published_sha256": "8e5500f2a6f3950f6fd066b626297d05c2d6d1c6e168747e29e87e1649d7f4c7"
+    },
+    {
+      "path": "middleware/source/my_products.php",
+      "export_sha256": "359f359a1eb94b5ee48f47ae9045dbefd8d2e590737f94a20ab5b5f262ca8ccf",
+      "published_sha256": "d3a9d9a2694d64455540ac39bcbc7525626ff25bd00d64c44c83c6f4ddcbddbe"
+    },
+    {
+      "path": "middleware/source/news-detail.php",
+      "export_sha256": "00674a88bdb489cb002f064852fefee4cbd9fbca25418d916a4ae4295a67ec89",
+      "published_sha256": "9030fcc99c237269f64ef2d4466d8ea20f71613e55db147d45c1c33249cd6e01"
+    },
+    {
+      "path": "middleware/source/newslist.php",
+      "export_sha256": "119ca768f7173c94a2a899c0feed45def76fd517c43f6cd9be83f7d496947d66",
+      "published_sha256": "f187741792e9aa57c990def38fa2436ae91b9b4c5e149bfc2a61296096861572"
+    },
+    {
+      "path": "middleware/source/participants/.htaccess",
+      "export_sha256": "ce31d241d900eaef6626da9614fecf6d0e029cc7823f8afc9692125d8c3dacb8",
+      "published_sha256": "3db30ee45fad836b5a2b896f11bc53d2fc6c763aa920cee28757f2556ea60e95"
+    },
+    {
+      "path": "middleware/source/participants/index.php",
+      "export_sha256": "7f144aac3e12b7e1b9fb1bc7731549f8660787b5b1e53f4269e3f16b31c18f01",
+      "published_sha256": "c62cfb59dff638abb1a6f67855aab66f32b4647d4e437643d80fcf9128a08778"
+    },
+    {
+      "path": "middleware/source/partners.php",
+      "export_sha256": "f3a859c37887230a7427c3140868a8587a57872f033ab8799c24fda74706e9fb",
+      "published_sha256": "682f243c5a7b8e5cba8cf8b1b7742d34782c9316938b50bdcb595e53c74e37c2"
+    },
+    {
+      "path": "middleware/source/phpmailer/mail.php",
+      "export_sha256": "8ca3f0647b32c9a94403f11dbd417864267cd12790e8ce506f637def5ee680c5",
+      "published_sha256": "88107b9b35d115e9455bd74a73aba3bde0e28e9bac7e2f02ec04111440a6db81"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/PHPMailerAutoload.php",
+      "export_sha256": "20206f4831bdcf00d460c05b1360546a6de407fe50c5471aa0c2c1f6e495fa59",
+      "published_sha256": "9ba5452971e60bacd443131b874d2de96a09195df719c86adb706eb381d71463"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/class.phpmailer.php",
+      "export_sha256": "7c360ee75605e1f141a459e8f15a06ec84e035701cdef3b22d7862f5e00f7673",
+      "published_sha256": "f7dea483e1744acff8e55caf6ec91a867285bd6f29f82cf156319b7745624965"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/class.phpmaileroauth.php",
+      "export_sha256": "d55de5d34c6e98543a4d92749dea7e6a2fe1277ddfb1446d0a8342de3aaac6df",
+      "published_sha256": "d04b40e846437ae19c8d32f67faef71a77e05454fa286ccb6e68b6ddd9af13be"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/class.phpmaileroauthgoogle.php",
+      "export_sha256": "1fb35f4564c5d0f629b1fe5fca7389c84447176c6d5b852abeaa7eefa775fc34",
+      "published_sha256": "f799b1e8be6e9be8967d263b01d20bb68d9ddc63376c54d1338277e09421ef38"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/class.pop3.php",
+      "export_sha256": "6eaf8aea233a133963905b661a2b7e42a8d8b3bf703dab0ed748b1b3508f75a9",
+      "published_sha256": "a8a9e3e10f19f4c9f8648a15ec4b9776a83a056ea7062eb5a750cf971fc3a046"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/class.smtp.php",
+      "export_sha256": "3ad95d6b8de12537f11a65ba7bf2fac90fc6828ccdf66617d3b7c2959503a2c3",
+      "published_sha256": "8f50ceca22d89979f9484f9e4ee20fdcaf0aed7485537086762000cbb6e018de"
+    },
+    {
+      "path": "middleware/source/phpmailer/mailer/sendmail.php",
+      "export_sha256": "2a63146455331092b1dc7d32f3feb417345b0fef6bd36a862c34f18a9d592004",
+      "published_sha256": "916b4b425e7b876167e3186a3a42136781e33bfa3858ecbb2f3507b870a457ab"
+    },
+    {
+      "path": "middleware/source/policy/.htaccess",
+      "export_sha256": "df828bc4157e389dffea09b9c5e8c2ba12b320756a8e7962277ca47e4124c7ef",
+      "published_sha256": "7e52eff8ec7b4cfdaf2efef3865df60c87f518479277f67eb7f553a679872241"
+    },
+    {
+      "path": "middleware/source/policy/index.php",
+      "export_sha256": "1a6328db6efeaae895b0086b5168b69edc9ad2b724f5f512d7a10988cee3b5a0",
+      "published_sha256": "8322aa01b01ce0e7320bfe1a6111adcc8b21669d5c3e155053d5fedacfb5c0fb"
+    },
+    {
+      "path": "middleware/source/product_market.php",
+      "export_sha256": "29971223e04c09f341f4f61fcb6c6f660d6bda4a6e05d0f61bc8fcd857222fc2",
+      "published_sha256": "94258ac226ed8307af5a12972915f48f59fda86d7cfff72405742c0c95073598"
+    },
+    {
+      "path": "middleware/source/review_management.php",
+      "export_sha256": "e07327da900233103da9660c136ff3e152c30d14d7c4cd13212d6ab16909f12f",
+      "published_sha256": "cbba0b2b2b77395d735bca055077a3abe8450fb29fb27200de9fe9be265f2bff"
+    },
+    {
+      "path": "middleware/source/schema/.htaccess",
+      "export_sha256": "df828bc4157e389dffea09b9c5e8c2ba12b320756a8e7962277ca47e4124c7ef",
+      "published_sha256": "7e52eff8ec7b4cfdaf2efef3865df60c87f518479277f67eb7f553a679872241"
+    },
+    {
+      "path": "middleware/source/schema/index.php",
+      "export_sha256": "3bf2669b6cd892d9204a565eb2c891a87f8d83a3c78b4c31512ee78561c6e4e9",
+      "published_sha256": "4547a826517440602ed47abfb89ab4eb9dff51fb2b613a769f9e1d0c70dd2a72"
+    },
+    {
+      "path": "middleware/source/seonew.php",
+      "export_sha256": "176c06fc9e42f276726f6e9d6792699f7fd288d5d5de445e926b50901af42a6f",
+      "published_sha256": "755accd92f95cc045f772eb5c2a18966393ac667766b78a06f21fd418c365b96"
+    },
+    {
+      "path": "middleware/source/sidebar.php",
+      "export_sha256": "eb4e885e71c7dcf91176a6349c867247c6157972586d1aa079a8da2d2873a8a2",
+      "published_sha256": "85abf2cd8fa165149258ed0dfdbe46991a89cafa2f2ddeb1289c3210cf8215c6"
+    },
+    {
+      "path": "middleware/source/sub_accounts.php",
+      "export_sha256": "02d10846408add8d791d929f0a7f6b782d367631d4e6e7da901320ed98331988",
+      "published_sha256": "5343da555b47a044c39d41a093c967279244b2108ac0c3627145acc20b4c49da"
+    },
+    {
+      "path": "middleware/source/subscriptions.php",
+      "export_sha256": "86d2efeed31dce7d0f97900f8212bfa80cacb5fc5ad3bacfe0d23bd36afc727b",
+      "published_sha256": "1a1ed7309297e1ec9b52536fda9838d028f1ff2047d1aad1a32f276953d0bbbc"
+    },
+    {
+      "path": "scripts/cloud-middleware-start.sh",
+      "export_sha256": "33656a042d64ee11fcbbbea7b6d79aff5567422a372dbd8e3eae4cd3a39db8f9",
+      "published_sha256": "33656a042d64ee11fcbbbea7b6d79aff5567422a372dbd8e3eae4cd3a39db8f9"
+    },
+    {
+      "path": "scripts/configure-ttc-demo.py",
+      "export_sha256": "08e3447e09320ec18062671c0de072cfeaf2cbb42f4396dd424a6205a430e27d",
+      "published_sha256": "08e3447e09320ec18062671c0de072cfeaf2cbb42f4396dd424a6205a430e27d"
+    },
+    {
+      "path": "scripts/demo_status.py",
+      "export_sha256": "8711d537dea8ab137764642691654831e6cf8d506915197bfcb4aee51eac1e7d",
+      "published_sha256": "8711d537dea8ab137764642691654831e6cf8d506915197bfcb4aee51eac1e7d"
+    },
+    {
+      "path": "scripts/extract_schema.py",
+      "export_sha256": "ff93c82b408217616dbb70cd295c6b9bdc5a23f84b46c4f2ceb434e90565b165",
+      "published_sha256": "ff93c82b408217616dbb70cd295c6b9bdc5a23f84b46c4f2ceb434e90565b165"
+    },
+    {
+      "path": "scripts/live_walkthrough.py",
+      "export_sha256": "e3c0dae68f02f204cc781ce95077acae6a49de42a7781022132360bc85a15478",
+      "published_sha256": "e3c0dae68f02f204cc781ce95077acae6a49de42a7781022132360bc85a15478"
+    },
+    {
+      "path": "scripts/prepare_middleware.py",
+      "export_sha256": "50d6b62429fa036baf6843c7cf9fc9c43e45b731c54fc7b1540a6959fad0d0b8",
+      "published_sha256": "50d6b62429fa036baf6843c7cf9fc9c43e45b731c54fc7b1540a6959fad0d0b8"
+    },
+    {
+      "path": "scripts/start-dataplane.sh",
+      "export_sha256": "c40b9c6cd7c527fedb07380ab6de5b394edecdc0516f1049e2d02cdfed147cc7",
+      "published_sha256": "c40b9c6cd7c527fedb07380ab6de5b394edecdc0516f1049e2d02cdfed147cc7"
+    },
+    {
+      "path": "scripts/start-demo.sh",
+      "export_sha256": "11e47e2d58a62c8e836e89ecbb5d02a0404e252cf24befb3b68bbafe83164292",
+      "published_sha256": "11e47e2d58a62c8e836e89ecbb5d02a0404e252cf24befb3b68bbafe83164292"
+    },
+    {
+      "path": "scripts/test_edc_exchange.py",
+      "export_sha256": "794532d43fad0b3696ed27537f08b16002e52ed65c6eec2689f5304f1a6e49d6",
+      "published_sha256": "9e1ad6ec2983375f7bf5828181eb9b747f64b00b83d558cb03b5c4bf1568e585"
+    },
+    {
+      "path": "scripts/test_live_tms_exchange.py",
+      "export_sha256": "b211b964f872366fcce13e851bdc30c274dba10ee709558fb644be134f614d90",
+      "published_sha256": "d785b87f937bd3902ea542dec1511a9a936b50672fd2cb68ae668793623d9ea6"
+    },
+    {
+      "path": "scripts/test_ttc_exchange.py",
+      "export_sha256": "692aafb286fc60f41d3495741603e7e40f2d739c92ec07785ee0d2a938f10dd9",
+      "published_sha256": "0c6d87ae4d551df873a0d7c945fb1721f5d6167be534675f145114ad497cfc1a"
+    },
+    {
+      "path": "scripts/ttc_test_client.py",
+      "export_sha256": "9b25827ab78839d3198ec8a5dc10986f242f1f9b47d60cbd773cff04336ed58d",
+      "published_sha256": "9b25827ab78839d3198ec8a5dc10986f242f1f9b47d60cbd773cff04336ed58d"
+    },
+    {
+      "path": "ttc-policy-extension/src/main/java/tw/geomni/tms/TtcPolicyExtension.java",
+      "export_sha256": "d02fe27290057df4fd8523291be7f449246e4f6991df287c3d2fee252e7efc39",
+      "published_sha256": "d02fe27290057df4fd8523291be7f449246e4f6991df287c3d2fee252e7efc39"
+    }
+  ],
+  "redactions": {
+    "scripts/test_edc_exchange.py": "Deployed demo management key replaced with local placeholder.",
+    "scripts/test_live_tms_exchange.py": "Deployed demo management key replaced with local placeholder.",
+    "scripts/test_ttc_exchange.py": "Deployed demo management key replaced with local placeholder.",
+    "config/provider.properties": "Deployed demo management key replaced with local placeholder.",
+    "config/consumer.properties": "Deployed demo management key replaced with local placeholder.",
+    "middleware/source/adm/config/share.php": "Inherited administrator credential bypass disabled in public copy only; GCP runtime has not been changed.",
+    "middleware/source/adm/config/config.php": "SMS authentication key replaced with TTC_SMS_LOCK_KEY environment variable in public copy only.",
+    "middleware/source/adm/config/menuuser.php": "Fixed authentication salt replaced with TTC_AUTH_SALT environment variable in public copy only.",
+    "middleware/source/adm/config/menu.php": "Fixed authentication salt replaced with TTC_AUTH_SALT environment variable in public copy only.",
+    "middleware/source/phpmailer/mail.php": "Personal recipient/test content replaced by generic example; automatic test send disabled; SMTP test settings use environment variables. Public copy only."
+  },
+  "missing_build_sources": true,
+  "line_endings": {
+    "policy": "UTF-8 text CRLF/CR normalized to LF during public import; original archive retained separately.",
+    "normalized_paths": [
+      "middleware/source/headerlogin.php",
+      "middleware/source/my_products.php",
+      "middleware/source/InfoPrivacyPolicy.php",
+      "middleware/source/DataDeclaration.php",
+      "middleware/source/index.php",
+      "middleware/source/member.php",
+      "middleware/source/login.php",
+      "middleware/source/contact.php",
+      "middleware/source/.htaccess",
+      "middleware/source/my_applications.php",
+      "middleware/source/newslist.php",
+      "middleware/source/sub_accounts.php",
+      "middleware/source/about.php",
+      "middleware/source/Share.php",
+      "middleware/source/subscriptions.php",
+      "middleware/source/partners.php",
+      "middleware/source/seonew.php",
+      "middleware/source/contracts.php",
+      "middleware/source/review_management.php",
+      "middleware/source/PrivacyPolicy.php",
+      "middleware/source/news-detail.php",
+      "middleware/source/machine_accounts.php",
+      "middleware/source/footer.php",
+      "middleware/source/ajax.php",
+      "middleware/source/product_market.php",
+      "middleware/source/js.php",
+      "middleware/source/logout.php",
+      "middleware/source/header.php",
+      "middleware/source/sidebar.php",
+      "middleware/source/activate.php",
+      "middleware/source/contract/index.php",
+      "middleware/source/contract/.htaccess",
+      "middleware/source/contract/all.php",
+      "middleware/source/adm/capnew.php",
+      "middleware/source/adm/InfoPrivacyPolicy.php",
+      "middleware/source/adm/DataDeclaration.php",
+      "middleware/source/adm/contact.php",
+      "middleware/source/adm/code99.php",
+      "middleware/source/adm/newslist.php",
+      "middleware/source/adm/prohibited.php",
+      "middleware/source/adm/newsseo.php",
+      "middleware/source/adm/about.php",
+      "middleware/source/adm/code97.php",
+      "middleware/source/adm/indexseo.php",
+      "middleware/source/adm/PrivacyPolicy.php",
+      "middleware/source/adm/constraints.php",
+      "middleware/source/adm/bloglist.php",
+      "middleware/source/adm/code98.php",
+      "middleware/source/adm/select0.php",
+      "middleware/source/adm/schema.php",
+      "middleware/source/adm/reject_reasons.php",
+      "middleware/source/adm/allowed.php",
+      "middleware/source/adm/entities.php",
+      "middleware/source/adm/industry.php",
+      "middleware/source/adm/policy.php",
+      "middleware/source/adm/_pageajax.php",
+      "middleware/source/connector/index.php",
+      "middleware/source/connector/.htaccess",
+      "middleware/source/dataset/index.php",
+      "middleware/source/dataset/.htaccess",
+      "middleware/source/policy/index.php",
+      "middleware/source/policy/.htaccess",
+      "middleware/source/participants/index.php",
+      "middleware/source/participants/.htaccess",
+      "middleware/source/agreement/index.php",
+      "middleware/source/agreement/.htaccess",
+      "middleware/source/schema/index.php",
+      "middleware/source/schema/.htaccess",
+      "middleware/source/auth/contract_token.php",
+      "middleware/source/auth/.htaccess",
+      "middleware/source/auth/token.php",
+      "middleware/source/catalog/index.php",
+      "middleware/source/catalog/.htaccess",
+      "middleware/source/phpmailer/mailer/class.phpmaileroauth.php",
+      "middleware/source/phpmailer/mailer/PHPMailerAutoload.php",
+      "middleware/source/phpmailer/mailer/class.phpmaileroauthgoogle.php",
+      "middleware/source/phpmailer/mailer/class.smtp.php",
+      "middleware/source/phpmailer/mailer/class.phpmailer.php",
+      "middleware/source/phpmailer/mailer/sendmail.php",
+      "middleware/source/phpmailer/mailer/class.pop3.php",
+      "middleware/source/adm/config/TokenAuth.php",
+      "middleware/source/adm/config/SMS.php",
+      "middleware/source/adm/config/createimg.php",
+      "middleware/source/adm/config/csp_strict.php",
+      "middleware/source/adm/config/JwtValidator.php",
+      "middleware/source/adm/config/checkip.php",
+      "middleware/source/adm/config/did.php",
+      "middleware/source/adm/config/getformf.php",
+      "middleware/source/adm/config/Response.php",
+      "middleware/source/adm/config/getformin.php",
+      "middleware/source/adm/config/menu1.php",
+      "middleware/source/adm/config/getformfp.php",
+      "middleware/source/adm/config/getform.php",
+      "middleware/source/adm/config/csp_relaxed.php",
+      "middleware/source/adm/config/product.php",
+      "middleware/source/adm/js/tinymce/getfile.php",
+      "middleware/source/adm/js/tinymce/upload.php",
+      "middleware/source/audit/dataset/index.php",
+      "middleware/source/audit/dataset/.htaccess",
+      "middleware/source/audit/agreement/index.php",
+      "middleware/source/audit/agreement/.htaccess",
+      "middleware/source/audit/transaction/.htaccess",
+      "middleware/source/audit/clearing/.htaccess"
+    ]
+  }
+}

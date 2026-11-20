@@ -1,0 +1,17 @@
+[Unit]
+Description=TMS role-based live demonstration workbench
+After=network-online.target docker.service tms-edc-provider.service tms-edc-consumer.service tms-edc-dataplane.service
+Wants=network-online.target
+[Service]
+Type=simple
+WorkingDirectory=/opt/tms-edc
+ExecStart=/usr/bin/python3 -u demo/workbench.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/tms-edc/logs
+[Install]
+WantedBy=multi-user.target

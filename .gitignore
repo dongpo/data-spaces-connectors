@@ -1,0 +1,15 @@
+target/
+secrets/
+logs/
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.jar
+*.webm
+*.bak*
+__pycache__/

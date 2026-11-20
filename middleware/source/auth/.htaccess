@@ -1,0 +1,19 @@
+# ============================================================
+# auth/.htaccess - 認證端點路由
+# ============================================================
+
+Options -Indexes
+
+RewriteEngine On
+
+# 1. 將 /auth/token 轉為 token.php
+RewriteRule ^token$ token.php [L,QSA]
+RewriteRule ^token\.php$ - [L]
+
+# 2. 將 /auth/contract_token 轉為 contract_token.php
+RewriteRule ^contract_token$ contract_token.php [L,QSA]
+RewriteRule ^contract_token\.php$ - [L]
+
+# 3. 將 /auth/verify 轉為 verify.php
+RewriteRule ^verify$ verify.php [L,QSA]
+RewriteRule ^verify\.php$ - [L]

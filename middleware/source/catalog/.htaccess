@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# 傳遞 Authorization Header 到 PHP
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%1]
+
+# /catalog/all → index.php?all=1
+RewriteRule ^all$ index.php?all=1 [L,QSA]
+
+# /catalog/{id} → index.php?id={id}
+RewriteRule ^([0-9]+)$ index.php?id=$1 [L,QSA]
+
+# /catalog 或 /catalog/ → index.php
+RewriteRule ^$ index.php [L,QSA]
+RewriteRule ^/$ index.php [L,QSA]

@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# 傳遞 Authorization Header 到 PHP
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%1]
+
+# 路由：/connector/{id} → index.php
+RewriteRule ^([0-9]+)$ index.php [L,QSA]

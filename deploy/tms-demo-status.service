@@ -1,0 +1,15 @@
+[Unit]
+Description=Read-only TMS native EDC integration status
+After=tms-edc-provider.service tms-edc-consumer.service tms-edc-dataplane.service
+[Service]
+User=tmsedc
+Group=tmsedc
+WorkingDirectory=/opt/tms-edc
+ExecStart=/usr/bin/python3 /opt/tms-edc/scripts/demo_status.py
+Restart=on-failure
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+[Install]
+WantedBy=multi-user.target

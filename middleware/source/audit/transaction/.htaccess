@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# 1. 確保 Authorization Header 能夠傳遞給 PHP
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%1]
+
+# 2. 將 /audit/transaction/{id} 映射至 index.php?id={id}
+# 當請求為 /audit/transaction/123 時，網址傳進來只會剩 "123"，因此直接配對數字
+RewriteRule ^([0-9]+)$ index.php?id=$1 [L,QSA]
